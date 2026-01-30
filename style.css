@@ -1,0 +1,48 @@
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--white); color: var(--dark); line-height: 1.6; scroll-behavior: smooth; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* NAVBAR */
+.navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: var(--white); position: fixed; width: 100%; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100; }
+.logo span { color: var(--primary); font-weight: bold; }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: bold; }
+
+/* HERO SECTION */
+.hero { padding: 160px 0 100px; text-align: center; background: linear-gradient(to bottom, #eff6ff, #ffffff); }
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.tagline { font-size: 1.2rem; color: #475569; }
+.status { color: var(--primary); font-weight: 500; margin-bottom: 30px; }
+
+/* BOUTONS PRÉSENTATION */
+.hero-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px; }
+.btn { display: inline-block; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.btn.primary { background: var(--primary); color: white; }
+.btn.secondary { background: #10b981; color: white; } /* Vert pour l'annexe */
+.btn.outline { border: 2px solid var(--primary); color: var(--primary); }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+/* SECTIONS */
+.section { padding: 80px 0; }
+.bg-light { background: var(--light); }
+.bg-dark { background: var(--dark); color: white; }
+.title { text-align: center; margin-bottom: 50px; }
+
+/* GRILLE PROJETS */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.card-header { color: var(--primary); font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; }
+.project-link { text-decoration: none; color: var(--primary); font-weight: bold; margin-top: 15px; display: inline-block; }
+
+/* FOOTER */
+.footer { text-align: center; padding: 50px; background: #1e293b; color: white; }
+.social-links { margin-bottom: 20px; }
+.social-links a { color: white; margin: 0 15px; font-size: 1.8rem; }
